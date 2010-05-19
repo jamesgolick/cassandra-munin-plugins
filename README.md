@@ -7,6 +7,8 @@ These plugins are configurations for something called jmxquery that I found some
 
 Make sure all the files from this repo are in the same directory and that jmx_ is executable. Then in /etc/munin/plugins, create a symlink named after each of the plugin configurations to the jmx_ executable. The symlink needs to be an absolute path, not relative, or jmx_ won't be able to parse it correctly.
 
+Copy and modify the standard1* metrics for the columnfamlies you wish to monitor.  (These should include system.HintsColumnFamily, in production.)
+
 If you take a look at the .conf files, it should be fairly straightforward to figure out how to create your own.
 
 If you have JMX running on a non-standard port (something other than 8080), you can set it in your munin config like this:
