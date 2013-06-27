@@ -36,7 +36,7 @@ CONFIGNAME=`basename $0 | sed 's/^jmx_//g'`.conf
 RDIR=`dirname $LINK`
 
 if [ "$jmxurl" = "" ]; then
-SERVICE=service:jmx:rmi:///jndi/rmi://localhost:8080/jmxrmi
+SERVICE=service:jmx:rmi:///jndi/rmi://localhost:7199/jmxrmi
 else
 SERVICE="$jmxurl"
 fi
