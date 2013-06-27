@@ -13,7 +13,7 @@ If you take a look at the .conf files, it should be fairly straightforward to fi
 
 If you have JMX running on a non-standard port (something other than 8080), you can set it in your munin config like this:
 
-    [cassandra_]
+    [cassandra_*]
     env.jmxurl service:jmx:rmi:///jndi/rmi://localhost:YOURPORTHERE/jmxrmi
 
 ## Credits
